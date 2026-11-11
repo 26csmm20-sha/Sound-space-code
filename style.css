@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #10101c;
+  color: white;
+  min-height: 100vh;
+}
+
+.auth-container {
+  width: 90%;
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 35px;
+  background: #202033;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #a78bfa;
+  margin-bottom: 15px;
+}
+
+.auth-container p {
+  margin: 15px 0;
+  color: #d1d1df;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  margin: 10px 0;
+  border: 1px solid #44445b;
+  border-radius: 8px;
+  background: #151525;
+  color: white;
+  font-size: 15px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #8b5cf6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #7041d8;
+}
+
+.auth-container button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+a {
+  color: #c4b5fd;
+}
+
+#message,
+#searchMessage {
+  margin: 15px 0;
+  color: #fca5a5;
+}
+
+.navbar {
+  background: #202033;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar span {
+  margin-right: 15px;
+}
+
+.dashboard {
+  width: 90%;
+  max-width: 1100px;
+  margin: 45px auto;
+}
+
+.dashboard h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.dashboard > p {
+  color: #c4c4d4;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-form input {
+  flex: 1;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.music-card {
+  background: #202033;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.music-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.music-card h3 {
+  font-size: 16px;
+  margin: 12px 0 7px;
+}
+
+.music-card p {
+  color: #b8b8cc;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.music-card a {
+  display: inline-block;
+  background: #8b5cf6;
+  color: white;
+  padding: 9px 13px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+}

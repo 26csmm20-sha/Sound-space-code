@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundSpace | Music Discovery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1> SoundSpace</h1>
+    <div>
+      <span id="welcome"></span>
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <h2>Discover Your Music</h2>
+    <p>Search for your favourite songs and artists.</p>
+
+    <form id="searchForm" class="search-form">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search songs or artists..."
+        required
+      >
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="searchMessage"></p>
+    <section id="musicResults" class="music-grid"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundSpace | Register</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h1> SoundSpace</h1>
+    <p>Create your account</p>
+
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Full name" required>
+      <input type="email" id="email" placeholder="Email address" required>
+      <input type="password" id="password" placeholder="Password (minimum 6 characters)" minlength="6" required>
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+    <p>Already registered? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
